@@ -6,12 +6,12 @@ properties:
   resources:
     type: array
     items:
-      $ref: '#/definitions/Resource'
+      $ref: '#/$defs/Resource'
   filteringTerms:
     type: array
     items:
-      $ref: '#/definitions/FilteringTerm'
-definitions:
+      $ref: '#/$defs/FilteringTerm'
+$defs:
   FilteringTerm:
     type: object
     description: >-
@@ -61,6 +61,20 @@ definitions:
         type: array
         items:
           type: string
+      values:
+        description: >- 
+          Optional list of possible values for alphanumeric filters
+        examples: 
+          - 
+            - benign 
+            - likely benign 
+            - pathogenic 
+          - 
+            - pathogenic
+        type: array
+        items:
+          type: string
+        minItems: 1
   Resource:
     type: object
     description: >-
