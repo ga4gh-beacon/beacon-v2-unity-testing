@@ -49,7 +49,7 @@ nav:
                - Runs: schemas-md/runs_defaultSchema
             - Terms List: schemas-md/beacon_terms
     - Beacon Development:
-        - How to Contribute: contribute
+        # - How to Contribute: contribute
         - Repository and Branch Organization: code-organization
         - Github Repositories &#8599;: https://github.com/ga4gh-beacon/
     # - Download PDF: pdf/beacon.pdf
